@@ -1,0 +1,124 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    background-image: url('photos1.jpg');
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Main Content */
+main {
+    padding: 4rem;
+}
+
+/* Articles Section */
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5rem;
+}
+
+/* Article Styling */
+article {
+    background-color: #f4f4f4;
+    border: 10px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.vertical-line{
+    margin-left: 450px;
+    top: 100px;
+    width: 15px;
+    background-color: cadetblue;
+    height: 35%;
+    position: absolute;
+    border-radius: 10px;
+}
+.vertical-line1{
+    margin-left: 930px;
+    top: 100px;
+    width: 15px;
+    background-color: cadetblue;
+    height: 35%;
+    position: absolute;
+    border-radius: 10px;
+}
+article a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+article:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-images {
+    height: 300px;
+    width: 800px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
